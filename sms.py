@@ -600,7 +600,7 @@ import pandas
 root = Tk()
 
 root.title("Student Management System")
-root.config(bg="gold2")
+root.config(bg="maroon")                # This is color of main outer Frame
 root.geometry('1174x700+200+50')
 root.iconbitmap('icon.ico')
 root.resizable(False,False)
