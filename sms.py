@@ -571,7 +571,7 @@ def tick():
         time_string = time.strftime("%H:%M:%S")
         date_string = time.strftime("%d:%m:%Y")
        # print(time_string,date_string)
-        clock.config(text=" Date = "+date_string+"\nTime = "+time_string)
+        clock.config(text=" Date : "+date_string+"\nTime : "+time_string)
         clock.after(100,tick)
 
 
@@ -685,17 +685,17 @@ studenttable.pack(fill=BOTH,expand=1)
 
 ##################### Slider
 ss = "Welcome to SMS                                            "   # add spaces for smooth loop
-SliderLabel = Label(root, text=ss, font=('Arial',30,'bold'),relief=RIDGE, border=5, width=19, bg='gold')
+SliderLabel = Label(root, text=ss, font=('Arial',30,'bold'),relief=RIDGE, border=5, width=19, bg='gold2')
 SliderLabel.place(x=370, y=0)
 IntroLabelTick()
 
 ############# CLOCK
-clock = Label(root,text=ss,font=('times',14),relief=RIDGE,border=5,width=15,bg='light green')
+clock = Label(root,text=ss,font=('times',14),relief=RIDGE,border=5,width=15,bg='white')
 clock.place(x=10,y=10)
 tick()
 
 ################ Connect to Database 
-connectbutton = Button(root,text="Connect Database",width=23,font=('times',15),relief=RIDGE,border=5,bg='sky blue',activebackground='pink',activeforeground='white',command=connectdb)
+connectbutton = Button(root,text="Connect Database",width=23,font=('times',15),relief=RIDGE,border=5,bg='light green',activebackground='pink',activeforeground='white',command=connectdb)
 connectbutton.place(x=895,y=10)
 
 
